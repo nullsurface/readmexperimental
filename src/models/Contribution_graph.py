@@ -1,5 +1,6 @@
 import json
 
+
 class contribution_graph:
     width: int
     length: int
@@ -15,15 +16,10 @@ class contribution_graph:
         self.length = length
         self.graph = self.init_graph(self, width, length)
 
-    def __init__(self, width: int, length: int, path: str):
-        self.width = width
-        self.length = length
-        self.graph = self.init_graph(self, width, length, path)
+    # Init the graph from file
+    def __init__(self, path: str):
+        self.graph = json.load(path)
 
     # Init the graph to default state
     def init_graph(self, width: int, length: int) -> list[list]:
         return [[0 for j in range(width)] for k in range(length)]
-
-    # Init the graph to a state from file
-    def init_graph(self, width: int, length: int, path: str) -> list[list]:
-        return json.load(path)
