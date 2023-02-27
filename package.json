@@ -1,0 +1,23 @@
+{
+  "name": "readmexperimental",
+  "version": "1.0.0",
+  "description": "Use GitHub commit & contribution history to implement Digital Rain effects when viewed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nullsurface/readmexperimental.git"
+  },
+  "author": "Andrew Schrader, Abdulqadir Abuharrus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nullsurface/readmexperimental/issues"
+  },
+  "homepage": "https://github.com/nullsurface/readmexperimental#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
