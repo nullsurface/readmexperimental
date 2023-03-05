@@ -1,5 +1,4 @@
-import Color
-
+from .Color import Color
 
 class Cell:
     color: Color
